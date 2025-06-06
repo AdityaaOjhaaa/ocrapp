@@ -8,10 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const uploadForm = document.getElementById('upload-form');
     const loader = document.getElementById('loader');
 
-    // Check if API key is set
-    if (GOOGLE_API_KEY === 'AIzaSyAAVGD1a6hn8X_SAokeVRzGQSjtW-1s18A' || !GOOGLE_API_KEY) {
-        console.error('Google API key not configured');
-    }
 
     fileInput.addEventListener('change', function() {
         if (this.files.length > 0) {
